@@ -40,6 +40,34 @@
          href="js/plugins/slick/slick-theme.css"
       />
       <link rel="stylesheet" href="css/main.css" />
+      <link
+         rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+         crossorigin="anonymous"
+      />
+      <style>
+         main {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+         }
+         main h1 i {
+            color: green;
+            margin-right: 10px;
+         }
+         main .btn {
+            background-color: var(--main);
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 12px;
+            width: 100%;
+            max-width: 144px;
+            line-height: 32px;
+         }
+      </style>
    </head>
 
    <body class="home-page inner-page">
@@ -146,236 +174,13 @@
             </div>
          </div>
 
-         <div
-            class="inner-banner-wrap"
-            style="background-image: url(img/bg/contact-us.jpg)"
-         >
-            <h2>Contact Us</h2>
-         </div>
-
-         <div class="inner-content-main">
-            <div class="container">
-               <div class="inner-content-wrap">
-                  <div class="contact-us-wrap">
-                     <div class="row">
-                        <div class="col-lg-12 col-12">
-                           <h6>Need a help ?</h6>
-                           <div class="content-header">
-                              <h3>Share your query</h3>
-                           </div>
-                           <div class="contact-form">
-                              <span id="message"></span>
-                              <form
-                                 class="about contact_form"
-                                 name="contact_form"
-                                 id="myForm"
-                              >
-										<!-- <input type="hidden" name="_subject" value="mahmoud sup">
-										<input type="text" name="_honey" style="display:none">
-										<input type="hidden" name="_captcha" value="false"> -->
-										<input type="hidden" name="_template" value="box">
-										<!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html"> -->
-                                 <div class="row">
-                                    <div class="form-group col-sm-6">
-                                       <input
-                                          class="form-control"
-                                          name="form_name"
-                                          required=""
-                                          id="name"
-                                          placeholder="Enter your name"
-                                          type="text"
-                                       />
-                                       <!-- <div class="invalid-feedback"> Enter your Name.</div> -->
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                       <input
-                                          class="form-control"
-                                          name="form_email"
-                                          placeholder="Enter your Email Id"
-                                          type="email"
-                                          id="email"
-                                          required=""
-                                       />
-                                       <!-- <div class="invalid-feedback"> Please,Check your Email Id.</div> -->
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                       <input
-                                          class="form-control"
-                                          name="form_subject"
-                                          placeholder="Subject"
-                                          type="text"
-                                          id="subject"
-                                          required=""
-                                       />
-                                       <!-- <div class="invalid-feedback"> Please, Fill this one.</div> -->
-                                    </div>
-                                    <div class="form-group col-sm-6">
-                                       <input
-                                          class="form-control"
-                                          type="tel"
-                                          placeholder="Phone Number"
-                                          maxlength="8"
-                                          id="tel"
-                                          name="form_mobile"
-                                          required=""
-                                       />
-                                       <!-- <div class="invalid-feedback"> Enter your phone number.</div> -->
-                                    </div>
-                                    <div class="form-group col-sm-12">
-                                       <textarea
-                                          id="form-control"
-                                          name="form_message"
-                                          class="form-control form-message"
-                                          rows="5"
-                                          placeholder=" Message"
-                                          required=""
-                                       ></textarea>
-                                    </div>
-                                 </div>
-                                 <button
-                                    class="btn"
-                                    type="submit"
-                                 >
-                                    Submit
-                                    <i
-                                       class="fa fa-angle-right"
-                                       aria-hidden="true"
-                                    ></i>
-                                 </button>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-lg-12 col-12">
-                           <br /><br />
-
-                           <div class="content-header">
-                              <h3>Get In Touch</h3>
-                           </div>
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <div class="contact-address">
-                                    <h4>Cairo Branch:</h4>
-                                    <ul class="col-12">
-                                       <li>
-                                          <img
-                                             src="img/icons/location-c.png"
-                                             alt=""
-                                          />
-                                          Cairo Egypt
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/call-alt-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#">+987 6543 3210</a> ,
-                                             <a href="#">+987 6543 3210</a>
-                                          </span>
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/phone-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#">+987 6543 3210 </a>
-                                          </span>
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/email-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#"
-                                                >example@example.com
-                                             </a>
-                                          </span>
-                                       </li>
-                                    </ul>
-                                    <br />
-                                 </div>
-                              </div>
-                              <div class="col-lg-6">
-                                 <div class="contact-address">
-                                    <h4>Doha Branch:</h4>
-                                    <ul class="col-12">
-                                       <li>
-                                          <img
-                                             src="img/icons/location-c.png"
-                                             alt=""
-                                          />
-                                          Doha, Qatar
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/call-alt-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#">+987 6543 3210</a> ,
-                                             <a href="#">+987 6543 3210</a>
-                                          </span>
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/phone-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#"> +987 6543 3210 </a>
-                                          </span>
-                                       </li>
-                                       <li>
-                                          <span>
-                                             <img
-                                                src="img/icons/email-c.png"
-                                                alt=""
-                                             />
-                                             <a href="#">
-                                                example@example.com
-                                             </a>
-                                          </span>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-6 col-12">
-                        <div class="location-map-wrap">
-                           <iframe
-                              src="https://www.google.com/maps/embed?pb=20Lusail!5e0!3m2!1sen!2suk!4v1650610238967!5m2!1sen!2suk"
-                              frameborder="0"
-                              style="border: 0"
-                              allowfullscreen=""
-                              aria-hidden="false"
-                              tabindex="0"
-                           ></iframe>
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-12">
-                        <div class="location-map-wrap">
-                           <iframe
-                              src="https://www.google.com/maps/embed?pb=!1sen!2sin"
-                              frameborder="0"
-                              style="border: 0"
-                              allowfullscreen=""
-                              aria-hidden="false"
-                              tabindex="0"
-                           ></iframe>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+         <main class="container">
+            <h1><i class="fas fa-check-circle"></i>Thanks!</h1>
+            <p>
+               We have received your information, we will contact you shortly
+            </p>
+            <a href="/" class="btn">Continue</a>
+         </main>
 
          <div class="highlighted-info-wrap">
             <p>Prompt, High Quality and Emergency Medical Care</p>
@@ -425,6 +230,9 @@
                            </div>
                            <div class="col-sm-6 col-6">
                               <ul>
+                                 <!-- <li>
+                                    <a href="publications.html">Publications</a>
+                                 </li> -->
                                  <li><a href="gallery.html">Gallery</a></li>
                                  <li><a href="contact-us.html">Contact</a></li>
                               </ul>
@@ -567,8 +375,8 @@
       ></script>
 
       <script src="js/main.js"></script>
-		<script src="js/sendEmail.js"></script>
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="js/sendEmail.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <link
          rel="stylesheet"
          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
