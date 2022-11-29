@@ -468,13 +468,12 @@ textarea {
 }
 
 .highlighted-info-wrap {
-    position: relative;
-    text-align: center;
     height: 84px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/bg/bg-home-01.jpg) no-repeat center/cover;
+    /* background: url(../img/bg/bg-home-01.jpg) no-repeat center/cover; */
+    background-color: #3e3e3e;
 }
 
 .highlighted-info-wrap p {
@@ -1143,23 +1142,6 @@ textarea {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.doctors-wrap .doctors-item .doc-img .view-profile {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    z-index: -1;
-    transition: all 0.3s ease-in-out;
 }
 
 .doctors-wrap .doctors-item .doc-img:hover .view-profile {
