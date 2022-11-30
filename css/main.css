@@ -64,17 +64,6 @@ body {
     font-size: 14px;
 }
 
-
-/* 
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -85,11 +74,6 @@ body {
     text-shadow: none;
 }
 
-
-/*
- * A better looking default horizontal rule
- */
-
 hr {
     display: block;
     height: 1px;
@@ -98,13 +82,6 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -115,21 +92,11 @@ video {
     vertical-align: middle;
 }
 
-
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
-
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
     resize: vertical;
@@ -254,7 +221,7 @@ textarea {
 
 .header-logo-nav-wrap {
     position: relative;
-    padding: 16px 0;
+    /* padding: 16px 0; */
 }
 
 .logo-nav-block {
@@ -264,7 +231,7 @@ textarea {
 }
 
 .platinum-logo {
-    max-width: 75px;
+    max-width: 130px;
 }
 
 .platinum-logo img {
@@ -294,9 +261,12 @@ textarea {
     display: flex;
     align-items: center;
 }
+.header-enquiry div { 
+    width: 50px;
+}
 
 .header-enquiry i {
-    font-size: 24px;
+    font-size: 34px;
     color: #3e3e3e;
     position: absolute;
     bottom: 15px;
@@ -417,10 +387,11 @@ textarea {
     margin-bottom: 20px;
 }
 
-.home-banner-item .home-banner-content h4 {
+.home-banner-item .home-banner-content h5 {
     font-family: "poppinsmedium";
-    font-size: 24px;
+    /* font-size: 24px; */
     margin-bottom: 23px;
+    max-width: 400px;
 }
 
 .home-banner-item .home-banner-content .btn {
@@ -567,10 +538,19 @@ textarea {
 .home-service-wrap {
     position: relative;
     height: 412px;
-    background: url(../img/bg/bg-home-02.jpg) no-repeat center/cover;
     text-align: center;
     padding: 55px 0 0;
+    background: linear-gradient(to top, rgba(62, 62, 62, 0.9), rgba(62, 62, 62, 0.9)),url(../img/bg/bgservices.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+/* .home-service-wrap .overlay {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: gray;
+} */
 
 .home-service-wrap .section-header h1 {
     color: #ffffff;
@@ -832,7 +812,7 @@ textarea {
 }
 
 .footer-breif-info .footer-logo {
-    max-width: 80px;
+    max-width: 130px;
     margin-bottom: 20px;
 }
 
@@ -1094,7 +1074,6 @@ textarea {
 }
 
 .location-map-wrap {
-    margin-top: 30px;
     border: 2px solid #ffffff;
     box-shadow: 3px 5px 25px rgba(0, 0, 0, 0.08);
 }
@@ -2160,7 +2139,7 @@ table {
     }
 }
 
-.floatingButtonWrap {
+/* .floatingButtonWrap {
     display: block;
     position: fixed;
     bottom: 21px;
@@ -2187,7 +2166,6 @@ table {
     bottom: 0px;
     right: 0px;
     border: 5px solid #009688;
-    /* opacity: 0.3; */
     opacity: 1;
     transition: all 0.4s;
 }
@@ -2214,7 +2192,6 @@ table {
     position: absolute;
     bottom: 60px;
     right: 0px;
-    /* width: 200px; */
     display: none;
 }
 
@@ -2235,8 +2212,6 @@ table {
     overflow: hidden;
     white-space: nowrap;
     transition: all 0.4s;
-    /* -webkit-box-shadow: 1px 3px 5px rgb(211 224 255 / 50%); */
-    /* box-shadow: 1px 3px 5px rgb(211 224 255 / 50%); */
 }
 
 .floatingMenu li a:hover {
@@ -2246,7 +2221,32 @@ table {
 
 .floatingMenu li span {
     margin-right: 10px;
+} */
+.whats{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #04be3b;
+    z-index: 10;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.whats:hover{
+    transform:scale(1.1);
+    color: #fff;
+}
+.whats i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
 /*# sourceMappingURL=main.css.map */
+.social-links i {
+    font-size: 20px;
+}
