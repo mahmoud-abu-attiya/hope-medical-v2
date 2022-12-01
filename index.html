@@ -67,6 +67,7 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+            height: 100%;
          }
 
          .swiper-slide img {
@@ -74,6 +75,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+         }
+         .swiper-button-next:after, .swiper-button-prev:after{
+            color: #3e3e3e;
          }
       </style>
    </head>
@@ -324,7 +328,7 @@
 
          <div class="home-welcome-wrap">
             <div class="container">
-               <div class="row">
+               <div class="row align-items-center">
                   <div class="col-md-7">
                      <div class="section-header">
                         <h1><span>Welcome to</span> Hope Medical Center</h1>
@@ -347,7 +351,7 @@
                         /></a>
                      </div>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-5 my-4">
                      <div class="home-welcome-img">
                         <img src="img/abouthome.jpeg" alt="" class="rounded" />
                      </div>
@@ -367,14 +371,14 @@
 
          <div class="home-service-slider-wrap">
             <div class="container">
-               <div class="home-service-slider row">
+               <div class="home-service-slider row m-0">
                   <div class="swiper mySwiper">
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
-                                    src="img/random/service/Dentistry.webp"
+                                    src="img/random/service/dental-service.jpeg"
                                     alt=""
                                  />
                               </div>
@@ -394,10 +398,10 @@
                            </div>
                         </div>
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
-                                    src="img/random/service/Dermatology.jpg"
+                                    src="img/random/service/DERMATOLOGY.jpeg"
                                     alt=""
                                  />
                               </div>
@@ -417,7 +421,7 @@
                            </div>
                         </div>
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
                                     src="img/random/service/PLASTIC-SURGERY.jpg"
@@ -443,10 +447,10 @@
                            </div>
                         </div>
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
-                                    src="img/random/service/PHYSIOTHERAPY.jpeg"
+                                    src="img/random/service/pyhservice.jpeg"
                                     alt=""
                                  />
                               </div>
@@ -468,7 +472,7 @@
                            </div>
                         </div>
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
                                     src="img/random/service/DIETITIAN.png"
@@ -493,10 +497,10 @@
                            </div>
                         </div>
                         <div class="swiper-slide">
-                           <div class="home-service-item h-fill">
+                           <div class="home-service-item h-100 w-100">
                               <div class="service-img">
                                  <img
-                                    src="img/random/service/Internist.jpg"
+                                    src="img/random/service/longserve.jpeg"
                                     alt=""
                                  />
                               </div>
@@ -523,71 +527,8 @@
                      </div>
                      <div class="swiper-button-next"></div>
                      <div class="swiper-button-prev"></div>
-                     <div class="swiper-pagination"></div>
+                     <!-- <div class="swiper-pagination"></div> -->
                   </div>
-                  <!-- <div class="col-12 col-lg-6">
-                     <div class="home-service-item">
-                        <div class="service-img">
-                           <img src="img/random/service/dental.jpg" alt="" />
-                        </div>
-                        <div class="service-details">
-                           <h2>Dentistry</h2>
-                           <p>
-                              Taking care of your teeth and regaining your
-                              healthy smile is our specialty
-                           </p>
-                           <a href="dental.html" class="btn"
-                              ><img
-                                 src="img/icons/next-w.png"
-                                 alt=""
-                                 style="width: 14px; margin-left: 6px"
-                           /></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-12 col-lg-6">
-                     <div class="home-service-item">
-                        <div class="service-img">
-                           <img
-                              src="img/random/service/dermatology.jpg"
-                              alt=""
-                           />
-                        </div>
-                        <div class="service-details">
-                           <h2>Dermatology</h2>
-                           <p>
-                              While trying to achieve your aesthetic goals, our
-                              top priority is your health
-                           </p>
-                           <a href="dermatology.html" class="btn"
-                              ><img
-                                 src="img/icons/next-w.png"
-                                 alt=""
-                                 style="width: 14px; margin-left: 6px"
-                           /></a>
-                        </div>
-                     </div>
-                  </div>
-                  <a
-                     href="services.html"
-                     style="
-                        background-color: #000;
-                        border-radius: 5px;
-                        color: #ffffff;
-                        font-size: 12px;
-                        width: 100%;
-                        max-width: 144px;
-                        line-height: 32px;
-                        padding: 10px;
-                        text-align: center;
-                        margin: 20px auto;
-                     "
-                     >Read More
-                     <img
-                        src="img/icons/next-arrow.png"
-                        alt=""
-                        style="width: 22px; margin-left: 6px"
-                  /></a> -->
                </div>
             </div>
          </div>
@@ -761,25 +702,12 @@
          src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
       ></script>
       <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-
-      <!-- <script 
-		src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-		crossorigin="anonymous">
-	</script> -->
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
       <script
          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
          crossorigin="anonymous"
       ></script>
-
-      <!-- <script type="text/javascript" src="js/plugins/fontawesome/brands.min.js"></script> -->
-
-      <!-- <script type="text/javascript" src="js/plugins/fontawesome/fontawesome.min.js"></script> -->
-
       <script
          type="text/javascript"
          src="js/plugins/slick/slick.min.js"
@@ -792,18 +720,23 @@
       </a>
       <script>
          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
             // slidesPerGroup: 3,
             loop: true,
             loopFillGroupWithBlank: true,
-            pagination: {
-               el: ".swiper-pagination",
-               clickable: true,
-            },
+            // pagination: {
+            //    el: ".swiper-pagination",
+            //    clickable: true,
+            // },
             navigation: {
                nextEl: ".swiper-button-next",
                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+               768: {
+                  slidesPerView: 2,
+               },
             },
          });
       </script>

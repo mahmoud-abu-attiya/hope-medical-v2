@@ -710,7 +710,7 @@ textarea {
     content: "";
     width: 14px;
     height: 3px;
-    background-color: #a39cc9;
+    background-color: rgba(62, 62, 62, 0.7);
     opacity: 1;
     margin: 0 auto;
     left: 0;
@@ -719,7 +719,7 @@ textarea {
 
 .testimonial-slider .slick-dots li.slick-active button::before {
     width: 32px;
-    background-color: #514a79;
+    background-color: #3e3e3e;
 }
 
 .testimonial-item {
@@ -1655,6 +1655,10 @@ textarea {
     .sticky-header {
         margin-top: -138px;
     }
+    .home-banner-item .home-banner-content h5{
+        margin: auto auto 23px auto;
+        max-width: 18rem;
+    }
     /* .platinum-logo {
         max-width: 70px;
     } */
@@ -2053,175 +2057,6 @@ table {
 .clearfix:after {
     clear: both;
 }
-
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-    /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    /*
-   * Printing Tables:
-   * http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-    thead {
-        display: table-header-group;
-    }
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-/* .floatingButtonWrap {
-    display: block;
-    position: fixed;
-    bottom: 21px;
-    right: 33px;
-    z-index: 999999999;
-}
-
-.floatingButtonInner {
-    position: relative;
-}
-
-.floatingButton {
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    background: -webkit-linear-gradient(45deg, #8769a9, #507cb3);
-    background: -o-linear-gradient(45deg, #8769a9, #507cb3);
-    background: linear-gradient(45deg, #009688, #009688);
-    color: #fff;
-    line-height: 50px;
-    position: absolute;
-    border-radius: 50% 50%;
-    bottom: 0px;
-    right: 0px;
-    border: 5px solid #009688;
-    opacity: 1;
-    transition: all 0.4s;
-}
-
-.floatingButton .fa {
-    font-size: 27px !important;
-    line-height: 52px;
-}
-
-.floatingButton.open,
-.floatingButton:hover,
-.floatingButton:focus,
-.floatingButton:active {
-    opacity: 1;
-    color: #fff;
-}
-
-.floatingButton .fa {
-    transform: rotate(0deg);
-    transition: all 0.4s;
-}
-
-.floatingMenu {
-    position: absolute;
-    bottom: 60px;
-    right: 0px;
-    display: none;
-}
-
-.floatingMenu li {
-    width: 100%;
-    float: right;
-    list-style: none;
-    text-align: right;
-    margin-bottom: 5px;
-}
-
-.floatingMenu li a {
-    padding: 8px 15px;
-    display: inline-block;
-    background: #009688;
-    color: #f9f9f9;
-    border-radius: 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: all 0.4s;
-}
-
-.floatingMenu li a:hover {
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.floatingMenu li span {
-    margin-right: 10px;
-} */
 .whats{
     position: fixed;
     bottom: 2rem;
