@@ -36,8 +36,46 @@
          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
          crossorigin="anonymous"
       />
+      <!-- Link Swiper's CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
 
       <link rel="stylesheet" href="css/main.css" />
+      <style>
+         .swiper {
+            width: 100%;
+            height: 100%;
+         }
+
+         .swiper-slide {
+            /* text-align: center; */
+            font-size: 18px;
+            /* background: #fff; */
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+         }
+
+         .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      </style>
    </head>
 
    <body class="home-page inner-page">
@@ -162,7 +200,7 @@
             <div class="home-banner-slider">
                <div
                   class="home-banner-item"
-                  style="background-image: url(img/slider/Slide--2-.png)"
+                  style="background-image: url(img/bg/Dermatology.jpg)"
                >
                   <div class="container">
                      <div class="home-banner-content">
@@ -183,7 +221,7 @@
                </div>
                <div
                   class="home-banner-item"
-                  style="background-image: url(img/slider/Slide--3-.png)"
+                  style="background-image: url(img/bg/Dentistry.webp)"
                >
                   <div class="container">
                      <div class="home-banner-content">
@@ -205,7 +243,7 @@
                </div>
                <div
                   class="home-banner-item"
-                  style="background-image: url(img/slider/slide-04.jpg)"
+                  style="background-image: url(img/bg/Plastic-Surgery.jpg)"
                >
                   <div class="container">
                      <div class="home-banner-content">
@@ -224,7 +262,7 @@
                </div>
                <div
                   class="home-banner-item"
-                  style="background-image: url(img/slider/Slide--6-.png)"
+                  style="background-image: url(img/bg/Physiotherapy.jpg)"
                >
                   <div class="container">
                      <div class="home-banner-content">
@@ -246,7 +284,7 @@
                </div>
                <div
                   class="home-banner-item"
-                  style="background-image: url(img/slider/slide-1.jpeg)"
+                  style="background-image: url(img/bg/Dietitian.jpg)"
                >
                   <div class="container">
                      <div class="home-banner-content">
@@ -311,7 +349,7 @@
                   </div>
                   <div class="col-md-5">
                      <div class="home-welcome-img">
-                        <img src="img/random/home-1.jpg" alt="" />
+                        <img src="img/abouthome.jpeg" alt="" class="rounded" />
                      </div>
                   </div>
                </div>
@@ -330,7 +368,164 @@
          <div class="home-service-slider-wrap">
             <div class="container">
                <div class="home-service-slider row">
-                  <div class="col-12 col-lg-6">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/Dentistry.webp"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>Dentistry</h2>
+                                 <p>
+                                    Taking care of your teeth and regaining your
+                                    healthy smile is our specialty
+                                 </p>
+                                 <a href="dental.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/Dermatology.jpg"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>Dermatology</h2>
+                                 <p>
+                                    While trying to achieve your aesthetic
+                                    goals, our top priority is your health
+                                 </p>
+                                 <a href="dermatology.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/PLASTIC-SURGERY.jpg"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>Plastic surgery</h2>
+                                 <p>
+                                    Whether you are looking to improve your
+                                    facial appearance with cosmetic surgery or
+                                    require reconstructive surgery following an
+                                    injury, our experienced team is here to
+                                    help.
+                                 </p>
+                                 <a href="dental.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/PHYSIOTHERAPY.jpeg"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>Physiotherapy</h2>
+                                 <p>
+                                    Our team of experienced physiotherapists
+                                    work with patients of all ages to design
+                                    individualized treatment plans that promote
+                                    healing and improve function
+                                 </p>
+                                 <a href="dental.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/DIETITIAN.png"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>Dietitian</h2>
+                                 <p>
+                                    The Hope Medical Center Dietitian Services
+                                    is a team of highly trained and experienced
+                                    professionals who are dedicated to helping
+                                    you achieve your health and wellness goals
+                                 </p>
+                                 <a href="dental.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="home-service-item h-fill">
+                              <div class="service-img">
+                                 <img
+                                    src="img/random/service/Internist.jpg"
+                                    alt=""
+                                 />
+                              </div>
+                              <div class="service-details">
+                                 <h2>
+                                    INTERNIST AND
+                                    <span style="font-size: 16px"
+                                       >HEPATOGASTROENTEROLOGIST</span
+                                    >
+                                 </h2>
+                                 <p>
+                                    Taking care of your digestive system’s daily
+                                    activity and your internal organs.
+                                 </p>
+                                 <a href="dental.html" class="btn"
+                                    ><img
+                                       src="img/icons/next-w.png"
+                                       alt=""
+                                       style="width: 14px; margin-left: 6px"
+                                 /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-pagination"></div>
+                  </div>
+                  <!-- <div class="col-12 col-lg-6">
                      <div class="home-service-item">
                         <div class="service-img">
                            <img src="img/random/service/dental.jpg" alt="" />
@@ -392,7 +587,7 @@
                         src="img/icons/next-arrow.png"
                         alt=""
                         style="width: 22px; margin-left: 6px"
-                  /></a>
+                  /></a> -->
                </div>
             </div>
          </div>
@@ -591,13 +786,26 @@
       ></script>
 
       <script src="js/main.js"></script>
-
-      <!-- <link
-         rel="stylesheet"
-         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-      /> -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <a href="https:wa.me/+97430001892" target="_blank" class="whats shadow">
          <i class="fab fa-whatsapp"></i>
       </a>
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            // slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+            },
+            navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+            },
+         });
+      </script>
    </body>
 </html>

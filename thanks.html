@@ -31,6 +31,11 @@
          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
          crossorigin="anonymous"
       />
+      <!-- Link Swiper's CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
       <style>
          main {
             min-height: 50vh;
@@ -51,6 +56,37 @@
             max-width: 144px;
             line-height: 32px;
          }
+         .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       </style>
    </head>
 
@@ -195,13 +231,22 @@
                         </p>
                         <div class="social-links">
                            <span>
-                              <a href="https://www.facebook.com/hopemedical.qa" target="_blank">
+                              <a
+                                 href="https://www.facebook.com/hopemedical.qa"
+                                 target="_blank"
+                              >
                                  <i class="fab fa-facebook-f"></i>
                               </a>
-                              <a href="https://www.instagram.com/hopemedicalcentre.qa/" target="_blank">
+                              <a
+                                 href="https://www.instagram.com/hopemedicalcentre.qa/"
+                                 target="_blank"
+                              >
                                  <i class="fab fa-instagram"></i>
                               </a>
-                              <a href="https://www.snapchat.com/add/hopemedical.qa" target="_blank">
+                              <a
+                                 href="https://www.snapchat.com/add/hopemedical.qa"
+                                 target="_blank"
+                              >
                                  <i class="fab fa-snapchat-ghost"></i>
                               </a>
                            </span>
@@ -314,10 +359,28 @@
          type="text/javascript"
          src="js/plugins/slick/slick.min.js"
       ></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
       <script src="js/main.js"></script>
       <a href="https:wa.me/+97430001892" target="_blank" class="whats shadow">
          <i class="fab fa-whatsapp"></i>
       </a>
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+           slidesPerView: 3,
+           spaceBetween: 30,
+           slidesPerGroup: 3,
+           loop: true,
+           loopFillGroupWithBlank: true,
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           },
+           navigation: {
+             nextEl: ".swiper-button-next",
+             prevEl: ".swiper-button-prev",
+           },
+         });
+       </script>
    </body>
 </html>
