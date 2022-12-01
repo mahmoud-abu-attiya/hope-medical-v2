@@ -925,7 +925,7 @@ textarea {
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 
