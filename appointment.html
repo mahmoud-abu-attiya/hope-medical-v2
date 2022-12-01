@@ -231,6 +231,7 @@
                                        class="form-control custom-select"
                                        name="Department"
                                        required
+                                       id="department-selector"
                                     >
                                        <option value="">
                                           Choose Department
@@ -257,6 +258,7 @@
                                        class="form-control custom-select"
                                        name="Doctor"
                                        required
+                                       id="doctor-selector"
                                     >
                                        <option value="">Choose Doctor</option>
                                        <option value="Dr. Nathalie Bitar">
@@ -447,8 +449,28 @@
          <i class="fab fa-whatsapp"></i>
       </a>
       <script type="text/javascript">
-         var today = new Date().toISOString().split("T")[0];
+         const today = new Date().toISOString().split("T")[0];
          document.getElementById("form_date").setAttribute("min", today);
+         const chooseDoctor = document.getElementById("doctor-selector")
+         const doctorsDepartmentsMap = {
+            "Dermatology": ["Dr. Oana Petrica"],
+            "Dentistry": ["Dr. Nathalie Bitar", "Dr. Claude Saroufim", "Dr. Gulerana Gab", "Dr. Mirna Hobeika"],
+            "Plastic Surgery": ["Dr. Antoine Abi Abboud"],
+            "Physiotherapy": ["Dr. walid Raddadi"],
+            "Dietitian": ["Dr. Berthe karam"],
+         }
+         document.getElementById("department-selector").addEventListener("change", (e) => {
+            let html = '<option value="">Choose Doctor</option>'
+            console.log(e.target.value)
+            doctorsDepartmentsMap[e.target.value].forEach(doctor => {
+               html += `<option value="${doctor}">
+                           ${doctor}
+                        </option>`
+
+            });
+            chooseDoctor.innerHTML = html;
+
+         })
       </script>
    </body>
 </html>
