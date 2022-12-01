@@ -1654,6 +1654,9 @@ textarea {
 }
 
 @media (max-width: 575px) {
+    .inner-banner-wrap h2 {
+        font-size: xx-large;
+    }
     .main-wrapper {
         padding-top: 138px;
     }
@@ -1664,9 +1667,6 @@ textarea {
         margin: auto auto 23px auto;
         max-width: 18rem;
     }
-    /* .platinum-logo {
-        max-width: 70px;
-    } */
     .pre-header-right .header-book-btn .btn {
         font-size: 12px;
         padding: 5px 12px;
