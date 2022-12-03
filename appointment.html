@@ -251,6 +251,9 @@
                                        <option value="Dietitian">
                                           Dietitian
                                        </option>
+                                       <option value="Internist and Hepatogastroenterologist">
+                                          Internist and Hepatogastroenterologist
+                                       </option>
                                     </select>
                                  </div>
                                  <div class="form-group col-sm-6">
@@ -288,9 +291,9 @@
                                        <option value="Dr. Berthe karam">
                                           Dr. Berthe karam
                                        </option>
-                                       <!-- <option value="Dr. Jeanine awad">
-                                          Dr. Jeanine awad
-                                       </option> -->
+                                       <option value="Dr. Amani Yazbek">
+                                          Dr. Amani Yazbek
+                                       </option>
                                     </select>
                                  </div>
                               </div>
@@ -449,28 +452,39 @@
          <i class="fab fa-whatsapp"></i>
       </a>
       <script type="text/javascript">
+         let form = document.querySelector(".appointment-form");
+         form.onsubmit = () => {
+            form.reset();
+         };
+
          const today = new Date().toISOString().split("T")[0];
          document.getElementById("form_date").setAttribute("min", today);
-         const chooseDoctor = document.getElementById("doctor-selector")
+         const chooseDoctor = document.getElementById("doctor-selector");
          const doctorsDepartmentsMap = {
             "Dermatology": ["Dr. Oana Petrica"],
-            "Dentistry": ["Dr. Nathalie Bitar", "Dr. Claude Saroufim", "Dr. Gulerana Gab", "Dr. Mirna Hobeika"],
+            "Dentistry": [
+               "Dr. Nathalie Bitar",
+               "Dr. Claude Saroufim",
+               "Dr. Gulerana Gab",
+               "Dr. Mirna Hobeika",
+            ],
             "Plastic Surgery": ["Dr. Antoine Abi Abboud"],
             "Physiotherapy": ["Dr. walid Raddadi"],
             "Dietitian": ["Dr. Berthe karam"],
-         }
-         document.getElementById("department-selector").addEventListener("change", (e) => {
-            let html = '<option value="">Choose Doctor</option>'
-            console.log(e.target.value)
-            doctorsDepartmentsMap[e.target.value].forEach(doctor => {
-               html += `<option value="${doctor}">
+            "Internist and Hepatogastroenterologist": ["Dr. Amani Yazbek"],
+         };
+         document
+            .getElementById("department-selector")
+            .addEventListener("change", (e) => {
+               let html = '<option value="">Choose Doctor</option>';
+               console.log(e.target.value);
+               doctorsDepartmentsMap[e.target.value].forEach((doctor) => {
+                  html += `<option value="${doctor}">
                            ${doctor}
-                        </option>`
-
+                        </option>`;
+               });
+               chooseDoctor.innerHTML = html;
             });
-            chooseDoctor.innerHTML = html;
-
-         })
       </script>
    </body>
 </html>
