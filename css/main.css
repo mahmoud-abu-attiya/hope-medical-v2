@@ -1584,7 +1584,8 @@ textarea {
         /* justify-content: flex-start; */
     /* } */
     .pre-header-left span{
-        display: none;
+        /* display: none; */
+        font-size: 9px;
     }
     .header-enquiry {
         top: -44px;
