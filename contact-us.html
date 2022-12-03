@@ -160,7 +160,10 @@
 
          <div
             class="inner-banner-wrap"
-            style="background-image: url(img/bg/bg-contact.jpg); background-position:center;"
+            style="
+               background-image: url(img/bg/bg-contact.jpg);
+               background-position: center;
+            "
          >
             <h2>Contact Us</h2>
          </div>
@@ -486,5 +489,14 @@
       <script src="js/main.js"></script>
       <script src="js/sendEmail.js"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script>
+         window.onload = () => {
+
+            let zoomBtn = document.querySelector("iframe").contentWindow.document.querySelector(".gm-control-active");
+            // zoomBtn.onclick = () => {
+               console.log(zoomBtn);
+            // }
+         }
+      </script>
    </body>
 </html>
