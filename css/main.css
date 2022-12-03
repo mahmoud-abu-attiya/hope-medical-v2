@@ -627,6 +627,7 @@ textarea {
     height: auto;
     min-height: 290px;
     width: 90%;
+    min-height: 350px;
 }
 
 .home-service-item .service-img {
@@ -1553,7 +1554,6 @@ textarea {
     }
     .home-service-item {
         margin-bottom: 30px;
-        min-height: auto;
     }
     .footer-breif-info {
         border-bottom: 1px solid #2d2d2d;

@@ -34,6 +34,18 @@
       />
 
       <link rel="stylesheet" href="css/main.css" />
+      <style>
+         label.form-control {
+            color: #868686;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+         #form_date{
+            height: 0;
+            opacity: 0;
+         }
+      </style>
    </head>
 
    <body class="home-page inner-page">
@@ -217,6 +229,9 @@
                                     />
                                  </div>
                                  <div class="form-group col-sm-6">
+                                    <label for="form_data" class="form-control"
+                                       >444</label
+                                    >
                                     <input
                                        class="form-control"
                                        type="date"
@@ -251,7 +266,9 @@
                                        <option value="Dietitian">
                                           Dietitian
                                        </option>
-                                       <option value="Internist and Hepatogastroenterologist">
+                                       <option
+                                          value="Internist and Hepatogastroenterologist"
+                                       >
                                           Internist and Hepatogastroenterologist
                                        </option>
                                     </select>
@@ -424,7 +441,8 @@
          </footer>
          <div class="copyright-wrap">
             <p>
-               Copyright © 2022 Hope Medical Center . All Rights Reserved . Developed by
+               Copyright © 2022 Hope Medical Center . All Rights Reserved .
+               Developed by
                <a href="https://orizon.qa/" target="_blank"
                   ><u>Orizon Qatar</u></a
                >
@@ -452,14 +470,21 @@
          <i class="fab fa-whatsapp"></i>
       </a>
       <script type="text/javascript">
-         // let form = document.querySelector(".appointment-form");
-         // form.onsubmit = () => {
-         //    form.reset();
-         // };
+         let dateinput = document.getElementById("form_date");
+         let dateLable = document.querySelector("label.form-control");
+
+         dateLable.addEventListener("click", function () {
+            dateinput.focus();
+            dateinput.showPicker()
+         });
+         dateinput.addEventListener("change", function () {
+            dateLable.innerHTML = dateinput.value;
+         });
 
          const today = new Date().toISOString().split("T")[0];
-         document.getElementById("form_date").defaultValue = today;
-         document.getElementById("form_date").setAttribute("min", today);
+         dateinput.defaultValue = today;
+         dateLable.innerHTML = today;
+         dateinput.setAttribute("min", today);
          const chooseDoctor = document.getElementById("doctor-selector");
          const doctorsDepartmentsMap = {
             "Dermatology": ["Dr. Oana Petrica"],
