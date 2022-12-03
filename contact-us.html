@@ -325,15 +325,48 @@
                               </div>
                               <div class="col-lg-6">
                                  <div class="location-map-wrap">
-                                    <iframe
-                                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14419.28816167907!2d51.52475!3d25.3772801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccb05a4b67af3e5!2sHope%20Medical%20Center!5e0!3m2!1sar!2seg!4v1669772230484!5m2!1sar!2seg"
+                                    <!-- <iframe
+                                       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14419.28816167907!2d51.52475!3d25.3772801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccb05a4b67af3e5!2sHope%20Medical%20Center!5e0!3m2!1sar!2seg!4v1669772230484!5m2!1sar!2seg;z=200"
                                        width="600"
                                        height="450"
                                        style="border: 0"
                                        allowfullscreen=""
                                        loading="lazy"
                                        referrerpolicy="no-referrer-when-downgrade"
-                                    ></iframe>
+                                    ></iframe> -->
+                                    <div class="mapouter">
+                                       <div class="gmap_canvas">
+                                          <iframe
+                                             class="gmap_iframe"
+                                             frameborder="0"
+                                             scrolling="no"
+                                             marginheight="0"
+                                             marginwidth="0"
+                                             src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=Hope Medical Center qatar&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                          ></iframe
+                                          ><a href="https://formatjson.org/"
+                                             >format json</a
+                                          >
+                                       </div>
+                                       <style>
+                                          .mapouter {
+                                             position: relative;
+                                             text-align: right;
+                                             width: 100%;
+                                             height: 350px;
+                                          }
+                                          .gmap_canvas {
+                                             overflow: hidden;
+                                             background: none !important;
+                                             width: 100%;
+                                             height: 350px;
+                                          }
+                                          .gmap_iframe {
+                                             width: 100% !important;
+                                             height: 350px !important;
+                                          }
+                                       </style>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -461,7 +494,7 @@
 
          <div class="copyright-wrap">
             <p>
-               Copyright © 2022 Medical . All Rights Reserved . Developed by
+               Copyright © 2022 Hope Medical Center . All Rights Reserved . Developed by
                <a href="https://orizon.qa/" target="_blank"
                   ><u>Orizon Qatar</u></a
                >
@@ -489,14 +522,5 @@
       <script src="js/main.js"></script>
       <script src="js/sendEmail.js"></script>
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-      <script>
-         window.onload = () => {
-
-            let zoomBtn = document.querySelector("iframe").contentWindow.document.querySelector(".gm-control-active");
-            // zoomBtn.onclick = () => {
-               console.log(zoomBtn);
-            // }
-         }
-      </script>
    </body>
 </html>
