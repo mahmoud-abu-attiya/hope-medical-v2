@@ -1505,6 +1505,10 @@ textarea {
 }
 
 @media (max-width: 992px) {
+    .bookbtn{
+        display: flex;
+        justify-content: end;
+    }
     .pre-header-right .social-links {
         display: none;
     }
@@ -1579,6 +1583,9 @@ textarea {
     /* .pre-header-right { */
         /* justify-content: flex-start; */
     /* } */
+    .pre-header-left span{
+        display: none;
+    }
     .header-enquiry {
         top: -44px;
         display: none;
