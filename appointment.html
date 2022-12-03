@@ -230,8 +230,7 @@
                                  </div>
                                  <div class="form-group col-sm-6">
                                     <label for="form_data" class="form-control"
-                                       ></label
-                                    >
+                                       >Choose the date</label>
                                     <input
                                        class="form-control"
                                        type="date"
@@ -483,7 +482,7 @@
 
          const today = new Date().toISOString().split("T")[0];
          dateinput.defaultValue = today;
-         dateLable.innerHTML = today;
+         // dateLable.innerHTML = today;
          dateinput.setAttribute("min", today);
          const chooseDoctor = document.getElementById("doctor-selector");
          const doctorsDepartmentsMap = {
