@@ -20,7 +20,7 @@ function formSubmit() {
       inpName.value = "";
       inpSup.value = "";
    }
-   fetch("https://formsubmit.co/ajax/Hopemedcenter2021@gmail.com", {
+   fetch("https://formsubmit.co/ajax/info@hopemedical.qa", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(myState),
