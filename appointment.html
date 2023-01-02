@@ -41,7 +41,8 @@
             align-items: center;
             justify-content: space-between;
          }
-         #form_date{
+
+         #form_date {
             height: 0;
             opacity: 0;
          }
@@ -162,7 +163,10 @@
 
          <div
             class="inner-banner-wrap"
-            style="background-image: url(img/bg/appointment.jpg); background-position-x: right;"
+            style="
+               background-image: url(img/bg/appointment.jpg);
+               background-position-x: right;
+            "
          >
             <h2>Appointment</h2>
          </div>
@@ -222,15 +226,18 @@
                                  <div class="form-group col-sm-6">
                                     <input
                                        class="form-control"
-                                       type="tel"
+                                       type="number"
+                                       maxlength="8"
                                        placeholder="Phone Number"
                                        name="Phone"
+                                       id="phone"
                                        required
                                     />
                                  </div>
                                  <div class="form-group col-sm-6">
                                     <label for="form_data" class="form-control"
-                                       >Choose the date</label>
+                                       >Choose the date</label
+                                    >
                                     <input
                                        class="form-control"
                                        type="date"
@@ -474,7 +481,7 @@
 
          dateLable.addEventListener("click", function () {
             dateinput.focus();
-            dateinput.showPicker()
+            dateinput.showPicker();
          });
          dateinput.addEventListener("change", function () {
             dateLable.innerHTML = dateinput.value;
@@ -486,16 +493,16 @@
          dateinput.setAttribute("min", today);
          const chooseDoctor = document.getElementById("doctor-selector");
          const doctorsDepartmentsMap = {
-            "Dermatology": ["Dr. Oana Petrica"],
-            "Dentistry": [
+            Dermatology: ["Dr. Oana Petrica"],
+            Dentistry: [
                "Dr. Nathalie Bitar",
                "Dr. Claude Saroufim",
                "Dr. Gulerana Gab",
                "Dr. Mirna Hobeika",
             ],
             "Plastic Surgery": ["Dr. Antoine Abi Abboud"],
-            "Physiotherapy": ["Dr. walid Raddadi"],
-            "Dietitian": ["Dr. Berthe karam"],
+            Physiotherapy: ["Dr. walid Raddadi"],
+            Dietitian: ["Dr. Berthe karam"],
             "Internist and Hepatogastroenterologist": ["Dr. Amani Yazbek"],
          };
          document
@@ -510,6 +517,12 @@
                });
                chooseDoctor.innerHTML = html;
             });
+
+         document.getElementById("phone").oninput = (e) => {
+            e.target.value = Math.max(0, parseInt(e.target.value))
+               .toString()
+               .slice(0, 8);
+         };
       </script>
    </body>
 </html>
